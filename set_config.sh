@@ -4,7 +4,7 @@
 mkdir -p /etc/portage
 
 USE="systemd -consolekit"
-ACCEPT_KEYWORDS="**"
+ACCEPT_KEYWORDS="~amd64"
 ACCEPT_LICENSE="*"
 PYTHON_SINGLE_TARGET="python3_4"
 PYTHON_TARGETS="python3_4 python2_7"
