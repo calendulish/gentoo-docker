@@ -1,4 +1,4 @@
-FROM gentoo/stage3-amd64
+FROM gentoo/stage3-amd64:latest
 MAINTAINER Lara Maia - dev@lara.click
 LABEL Description="Gentoo with portage, git, repoman, systemd"
 

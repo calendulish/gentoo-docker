@@ -3,7 +3,7 @@
 
 mkdir -p /etc/portage
 
-USE="systemd -consolekit"
+USE="systemd -consolekit threads"
 ACCEPT_KEYWORDS="~amd64"
 ACCEPT_LICENSE="*"
 PYTHON_SINGLE_TARGET="python3_4"
@@ -16,6 +16,8 @@ echo "ACCEPT_LICENSE=\"$ACCEPT_LICENSE\"" >> /etc/portage/make.conf
 echo "PYTHON_SINGLE_TARGET=\"$PYTHON_SINGLE_TARGET\"" >> /etc/portage/make.conf
 echo "PYTHON_TARGETS=\"$PYTHON_TARGETS\"" >> /etc/portage/make.conf
 echo "RUBY_TARGETS=\"$RUBY_TARGETS\"" >> /etc/portage/make.conf
+
+eselect profile set default/linux/amd64/13.0/systemd
 
 unset USE
 unset ACCEPT_KEYWORDS
