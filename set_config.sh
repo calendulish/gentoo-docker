@@ -3,7 +3,7 @@
 
 mkdir -p /etc/portage
 
-USE="systemd -consolekit threads"
+USE="64bit multilib X xcomposite wayland systemd -consolekit -hardened threads"
 ACCEPT_KEYWORDS="~amd64"
 ACCEPT_LICENSE="*"
 PYTHON_SINGLE_TARGET="python3_4"
