@@ -16,8 +16,9 @@ python-updater
 emerge -uN --nodeps readline
 emerge @preserved-rebuild
 
-mkdir -p /etc/portage/package.use
+mkdir -p /etc/portage/{package.use,package.accept_keyword}
 echo "sys-apps/util-linux -systemd -udev build" >> /etc/portage/package.use/util-linux
+echo "sys-libs/glibc -~amd64 amd64" >> /etc/portage/package.accept_keywords/glibc
 
 emerge -uDN --backtrack=500 --with-bdeps=y @system
 emerge -uDN --backtrack=500 --with-bdeps=y @world
