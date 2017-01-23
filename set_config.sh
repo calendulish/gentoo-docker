@@ -1,9 +1,11 @@
 #!/bin/sh
 # Lara Maia <dev@lara.click> 2016
 
+set -e
+
 mkdir -p /etc/portage
 
-USE="64bit multilib X xcomposite wayland systemd -consolekit -hardened threads"
+USE="64bit multilib X xcomposite wayland gles gles2 systemd -consolekit -hardened threads"
 ACCEPT_KEYWORDS="~amd64"
 ACCEPT_LICENSE="*"
 PYTHON_SINGLE_TARGET="python3_4"

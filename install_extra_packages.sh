@@ -1,6 +1,8 @@
 #!/bin/sh
 # Lara Maia <dev@lara.click> 2016
 
+set -e
+
 PACKAGES="dev-vcs/git
           app-portage/repoman"
 

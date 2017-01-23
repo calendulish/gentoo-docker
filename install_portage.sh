@@ -1,6 +1,8 @@
 #!/bin/sh
 # Lara Maia <dev@lara.click> 2016
 
+set -e
+
 wget http://distfiles.gentoo.org/snapshots/portage-latest.tar.bz2
 
 mkdir -p /usr
