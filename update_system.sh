@@ -3,6 +3,8 @@
 
 set -e
 
+rm -fv /sbin/unix_chkpwd
+
 emerge --sync
 
 emerge -uN app-admin/perl-cleaner app-portage/perl-info app-portage/portage-utils
